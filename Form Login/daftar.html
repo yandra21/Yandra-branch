@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+    <link rel="stylesheet" href="Login.css">
+           <script>
+            function myFunction1() {
+              var x = document.getElementById("password-daftar");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+            function myFunction2() {
+                  var y = document.getElementById("password-daftar-konfirmasi");
+                  if (y.type === "password") {
+                    y.type = "text";
+                  } else {
+                    y.type = "password";
+                  }
+                }
+            </script>
+</head>
+<body>
+    <form action="Login.html">
+        <div class="container-daftar">
+          <img src="assets/download.png" alt="Al Falah">
+          <h1>SIGN UP</h1>
+          <div class="login-nama-lengkap">
+            <label for="nama depan login">Nama Depan<span style="color: red;">*</span></label><br>
+            <input class="nama-lengkap" type="text" id="nama depan login" placeholder="Nama Anda" required><br><br>
+            <label for="nama belakang login">Nama Belakang<span style="color: red;">*</span></label><br>
+            <input class="nama-lengkap" type="text" id="nama belakang login" placeholder="Nama Anda" required>
+        </div>
+        <div class="tanggal-lahir">
+            <label for="tanggal-lahir">Tanggal Lahir<span style="color: red;">*</span></label><br>
+            <input class="number" type="number" min="1" max="31" id="tanggal-lahir" placeholder="tanggal" required>
+            <input class="number" type="number" min="1" max="12" id="tanggal-lahir" placeholder="bulan" required>
+            <input class="number" type="number" min="2000" max="2023" id="tanggal-lahir" placeholder="tahun" required>    
+        </div>
+        <div class="alamat">
+            <label for="alamat-rumah">Alamat</label><br>
+            <textarea name="alamat" id="alamat-rumah" cols="44" rows="5" required></textarea>
+        </div>
+        <div class="email">
+            <label for="email-anda">Email<span style="color: red;">*</span></label><br>
+            <input class="box-email" type="email" id="email-anda" placeholder="yourname@gmail.com" required>
+        </div>
+        <div class="login-password">
+            <label for="password-daftar">Kata Sandi<span style="color: red;">*</span></label><br>
+            <input class="password-login" type="password" id="password-daftar" placeholder="kata sandi" onclick="myFunction()" required><br>
+            <input type="checkbox" id="sandi1" onclick="myFunction1()"><label for="sandi1">Show Password</label>
+        </div>
+        <div class="konfirmasi-password-daftar">
+            <label for="password-daftar-konfirmasi">Konfirmasi Kata Sandi<span style="color: red;">*</span></label><br>
+            <input class="password-login" type="password" id="password-daftar-konfirmasi" placeholder="konfirmasi kata sandi" onclick="myFunction()" required><br>
+            <input type="checkbox" id="ksandi" onclick="myFunction2()"><label for="ksandi">Show Password</label>
+        </div>
+        <div class="daftar">
+            <p>Sudah menjadi member?<a href="Login.html">Login</a></p>
+        </div>
+        <div>
+            <input class="button-login"  type="submit" id="btn-login" value="Daftar">
+            <label for="btn-login"></label>
+          </div>
+        </div>
+</body>
+</html>

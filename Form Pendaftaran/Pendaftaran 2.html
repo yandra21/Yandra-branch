@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <style>
+      img{
+        width: 350px;
+        border-radius: 15px;
+      }
+      th{
+        text-align: left;
+        color: #5b7934;
+      }
+      td{
+        color: #749845;
+      }
+    </style>
+</head>
+<body style="background-color: #d2f2a3;">
+  <center>
+    <img src="assets/daftar.png" alt="al falah">
+    <h1 style="color: #5b7934;">BIO DATA</h1>
+    <form action="https://www.instagram.com/y.jafarsidiq/">
+      <table style="width: 480px;">
+        <tr>
+            <th><label for="np">Nomor Pendaftaran</label></th>
+            <td><input style="margin-top: 30px;" class="np" type="text" id="np" placeholder="KOSONGKAN"><br>
+                <small>Diisi panitia saat validasi data</small></td>
+        </tr>
+        <!--A. IDENTITAS CALON PESERTA DIDIK start-->
+        <tr>
+            <th><label for="nm">Nama Lengkap</label><span style="color: red;">*</span></th>
+            <td><input style="margin-top: 30px;" size="45px" type="text" id="nm"><br>
+                <small>Tulis nama lengkap sesuai ijazah SMP/MTS</small></td>
+        </tr>
+        <tr>
+            <th><label>Jenis Kelamin <span style="color: red;">*</span></label></th>
+            <td><input type="radio" id="l" name="gender"><label for="l">Laki-Laki</label>
+                <input type="radio" id="p" name="gender" style="margin-left: 50px;"><label for="p">Perempuan</label></td>
+        </tr>
+        <tr>
+            <th><label for="NISN">NISN</label></th>
+            <td><input style="margin-top: 23px;" type="text" id="NISN" placeholder="contoh : 9996910688"><br>
+                <small>isi 10 digit angka NISN</small></td>
+        </tr>
+        <tr>
+            <th><label for="NIK">NIK</label></th>
+            <td><input style="margin-top: 23px;" type="text" id="NIK" placeholder="contoh : 959054678343967"><br>
+                <small>isi 16 digit angka NIK </small></td>
+        </tr>
+        <tr>
+            <th><label for="tempat lahir">Tempat Lahir<span style="color: red;">*</span></label></th>
+            <td><input type="text" id="tempat lahir"></td>
+        </tr>
+        <tr>
+            <th><label for="tanggal lahir">Tanggal Lahir<span style="color: red;">*</span></label></th>
+            <td><br><input type="date" id="tanggal lahir"><br>
+                <small>bulan tanggal tahun</small></td>
+        </tr>
+        <tr>
+            <th><label>Agama<span style="color: red;">*</span></label><br><br><br></th>
+            <td><input style="margin-top: 10px;" type="radio" id="Islam" name="agama"><label for="Islam">Islam</label>
+                <input type="radio" id="Buddha" name="agama"style="margin-left: 71px;"><label for="Buddha">Buddha</label><br>
+                <input type="radio" id="Kristen" name="agama"><label for="Kristen">Kristen</label>
+                <input type="radio" id="Katolik" name="agama" style="margin-left: 60px;"><label for="Katolik">Katolik</label><br>
+                <input type="radio" id="Hindu" name="agama"><label for="Hindu">Hindu</label>
+                <input type="text" id="Other"placeholder="Other" style="margin-left: 85px; width: 70px;">
+            </td>
+        </tr>
+        <tr>
+          <th><label for="alamat">Alamat Rumah<span style="color: red;">*</span></label><br><br><br><br><br></th>
+          <td><textarea style="margin-top : 15px;" id="alamat" cols="30" rows="5"></textarea><br>
+            <small>tulis alamat lengkap</small>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="notelp">No.Telp./HP/WA</label></th>
+          <td><input style="margin-top: 25px;" type="tel" id="notelp"placeholder="contoh : 0838 1234 XXXX" pattern="[0-9]{4}[0-9]{4}[0-9]{4}"><br>
+            <small>No yang bisa dihubungi</small></smal>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="filefoto">Pas Photo Terbaru</label></th>
+          <td><input style="margin-top: 30px;" type="file" id="filefoto" name="filefoto" value="Cari File Photo di HP/Komputer"><br>
+            <small>Background Merah atau Biru sesuai Tahun Lahir</small>
+          </td>
+        </tr>
+        <tr>
+          <th><br><label>Apakah anda penerima kartu KPS/KIP/PIP?<span style="color: red;">*</span></label></th>
+          <td><input style="margin-top: 10px;" type="radio" id="kipya" name="kip"><label for="kipya">ya</label>
+            <input type="radio" id="kiptidak" name="kip" style="margin-left: 100px;"><label for="kiptidak">tidak</label>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="nokip">Nomor KPS/KIP/PIP</label></th>
+          <td><input style="margin-top: 25px;" size="35px" type="text" id="nokip"><br>
+            <small>Tulis nomor salah satu nomor KPS/KIP/PIP yang dimiliki</small></td>
+        </tr>
+        <tr>
+          <th><br><label>Apakah anda layak mendapatkan BSM?<span style="color: red;">*</span></label></th>
+          <td><input style="margin-top: 3px;" type="radio" id="bsmya" name="bsm"><label for="bsmya">ya</label>
+          <input type="radio" id="bsmtidak" name="bsm" style="margin-left: 100px;"><label for="bsmtidak">tidak</label></td>
+        </tr>
+        <tr>
+          <th><label for="Alasan">Alasan layak mendapatkan BSM</label></th>
+          <td><input style="margin-top: 9px;" list="alasanbsm" name="alasanbsm" id="Alasan"><datalist id="alasanbsm">
+            <option value="Alsan 1">Alasan 1</option>
+            <option value="Alsan 2">Alasan 2</option>
+            <option value="Alasan 3">Alasan 3</option>
+            <option value="Alasan 4">Alasan 4</option>
+            <option value="Alasan 5">Alasan 5</option>
+          </datalist></td>
+        </tr>
+        <tr>
+          <th><label for="rencanatinggal">Rencana Tinggal</label></th>
+          <td><input style="margin-top: 9px;" list="rencanat" name="rencana" id="rencanatinggal"><datalist id="rencanat">
+            <option value="Rencana 1">Rencana 1</option>
+            <option value="Rencana 2">Rencana 2</option>
+            <option value="Rencana 3">Rencana 3</option>
+            <option value="Rencana 4">Rencana 4</option>
+            <option value="Rencana 5">Rencana 5</option>
+          </datalist></td>
+        </tr>
+        <tr>
+          <th><label for="rencanatranportasi">Rencana Alat Tranportasi</label></th>
+          <td><input style="margin-top: 9px;" list="rencanatr" name="alasanbsm" id="rencanatranportasi"><datalist id="rencanatr">
+            <option value="Rencana 1">Rencana 1</option>
+            <option value="Rencana 2">Rencana 2</option>
+            <option value="Rencana 3">Rencana 3</option>
+            <option value="Rencana 4">Rencana 4</option>
+            <option value="Rencana 5">Rencana 5</option>
+          </datalist></td>
+        </tr>
+        <!--A. IDENTITAS CALON PESERTA DIDIK finish-->
+        <!--B. DATA ORANG TUA/WALI start-->
+        <tr>
+            <th colspan="2"><br>B. DATA ORANG TUA/WALI<br></th>
+        </tr>
+        <tr>
+            <th><label for="namaayah">Nama Ayah<span style="color: red;">*</span></label></th>
+            <td><input style="margin-top: 25px;" type="text" id="namaayah"><br>
+            <small>Sesuai KTP</small></td>
+        </tr>
+        <tr>
+            <th><label for="tahun lahir ayah">Tahun Lahir Ayah</label></th>
+            <td><input list="lahir ayah" name="tahun lahir ayah" id="tahun lahir ayah">
+            <datalist id="lahir ayah">
+              <option value="Tahun 1">Tahun 1</option>
+              <option value="Tahun 2">Tahun 2</option>
+              <option value="Tahun 3">Tahun 3</option>
+              <option value="Tahun 4">Tahun 4</option>
+              <option value="Tahun 5">Tahun 5</option>
+            </datalist></td>
+        </tr>
+        <tr>
+            <th><label for="pendidikan ayah">Pendidikan Ayah</label></th>
+            <td><input list="p ayah" id="pendidikan ayah">
+                <datalist id="p ayah">
+                  <option value="Pendidikan 1">Pendidikan 1</option>
+                  <option value="Pendidikan 2">Pendidikan 2</option>
+                  <option value="Pendidikan 3">Pendidikan 3</option>
+                  <option value="Pendidikan 4">Pendidikan 4</option>
+                  <option value="Pendidikan 5">Pendidikan 5</option>
+                </datalist></td>
+        </tr>
+        <tr>
+            <th><br><label>Keadaan Ayah<span style="color: red;">*</span></label></th>
+            <td><br><input type="radio" id="ayah masih hidup" name="keadaan ayah"><label for="ayah masih hidup">Masih Hidup</label>
+            <input style="margin-left: 40px;" type="radio" id="sudah meninggal" name="keadaan ayah"><label for="sudah meninggal">Sudah Meninggal</label><br>
+        </tr>
+        <tr>
+            <th><label for="pekerjaan ayah">Pekerjaan Ayah</label><br><br><br></th>
+            <td><br><input type="radio" id="ayah pns" name="pekerjaan ayah"><label for="ayah pns">PNS</label>
+                <input style="margin-left: 98px;" type="radio" id="ayah petani" name="pekerjaan ayah"><label for="ayah petani">Petani</label><br>
+                <input type="radio" id="ayah honorer" name="pekerjaan ayah"><label for="ayah honorer">Honorer</label>
+                <input style="margin-left: 71px;" type="radio" id="ayah karyawan swasta" name="pekerjaan ayah"><label for="ayah karyawan swasta">Karyawan Swasta</label><br>
+                <input type="radio" id="ayah buruh" name="pekerjaan ayah"><label for="ayah buruh">Buruh</label>
+                <input style="margin-left: 87px;" type="radio" id="ayah wiraswasta" name="pekerjaan ayah"><label for="ayah wiraswasta">Wiraswasta</label><br>
+                <input type="radio" id="ayah tidak bekerja" name="pekerjaan ayah"><label for="ayah tidak bekerja">Tidak Bekerja</label>
+                <input style="margin-left: 33px;" type="radio" id="ayah dll" name="pekerjaan ayah"><label for="ayah dll">DLL</label>
+                </td>
+        </tr>
+        <tr>
+            <th><label for="penghasilanayah">Penghasilan Ayah</label></th>
+            <td><input style="margin-top: 25px;" list="penghasilany" id="penghasilanayah">
+                <datalist id="penghasilany">
+                  <option value="Penghasilan Ayah 1">Penghasilan Ayah 1</option>
+                  <option value="Penghasilan Ayah 2">Penghasilan Ayah 2</option>
+                  <option value="Penghasilan Ayah 3">Penghasilan Ayah 3</option>
+                  <option value="Penghasilan Ayah 4">Penghasilan Ayah 4</option>
+                  <option value="Penghasilan Ayah 5">Penghasilan Ayah 5</option>
+                </datalist><br><small>Pilih Rp0,-jika ayah sudah meninggal</small></td>
+        </tr>
+        <tr>
+            <th><label for="alamat ayah">Alamat Ayah</label><br><br><br><br><br></th>
+            <td><textarea style="margin-top: 15px;" id="alamat ayah" cols="30" rows="5"></textarea><br>
+                <small>Sesuai KTP</small>
+        </tr>
+         <tr>
+            <th><label for="namaibu">Nama Ibu<span style="color: red;">*</span></label></th>
+            <td><input style="margin-top: 15px;" type="text" id="namaibu"><br>
+            <small>Sesuai KTP</small></td>
+        </tr>
+        <tr>
+            <th><label for="tahun lahir ibu">Tahun Lahir Ibu</label></th>
+            <td><input style="margin-top: 5px;" list="lahir ibu" name="tahun lahir ibu" id="tahun lahir ibu">
+            <datalist id="lahir ibu">
+              <option value="Tahun 1">Tahun 1</option>
+              <option value="Tahun 2">Tahun 2</option>
+              <option value="Tahun 3">Tahun 3</option>
+              <option value="Tahun 4">Tahun 4</option>
+              <option value="Tahun 5">Tahun 5</option>
+            </datalist></td>
+        </tr>
+        <tr>
+            <th><label for="pendidikan ibu">Pendidikan Ibu</label></th>
+            <td><input style="margin-top: 5px;" list="p ibu" id="pendidikan ibu">
+                <datalist id="p ibu">
+                  <option value="Pendidikan 1">Pendidikan 1</option>
+                  <option value="Pendidikan 2">Pendidikan 2</option>
+                  <option value="Pendidikan 3">Pendidikan 3</option>
+                  <option value="Pendidikan 4">Pendidikan 4</option>
+                  <option value="Pendidikan 5">Pendidikan 5</option>
+                </datalist></td>
+        </tr>
+        <tr>
+            <th><label>Keadaan Ibu<span style="color: red;">*</span></label></th>
+            <td><input type="radio" id="ibu masih hidup" name="keadaan ibu"><label for="ibu masih hidup">Masih Hidup</label>
+            <input style="margin-left: 40px;" type="radio" id="ibu sudah meninggal" name="keadaan ibu"><label for="ibu sudah meninggal">Sudah Meninggal</label><br>
+        </tr>
+        <tr>
+            <th><label for="pekerjaan ibu">Pekerjaan Ibu</label></th>
+            <td><input type="radio" id="ibu pns" name="pekerjaan ibu"><label for="ibu pns">PNS</label>
+                <input style="margin-left: 98px;" type="radio" id="ibu rumah tangga" name="pekerjaan ibu"><label for="ibu rumah tangga">Ibu Rumah Tangga</label><br>
+                <input type="radio" id="ibu honorer" name="pekerjaan ibu"><label for="ibu honorer">Honorer</label>
+                <input style="margin-left: 72px;" type="radio" id="ibu karyawan swasta" name="pekerjaan ibu"><label for="ibu karyawan swasta">Karyawan Swasta</label><br>
+                <input type="radio" id="ibu buruh" name="pekerjaan ibu"><label for="ibu buruh">Buruh</label>
+                <input style="margin-left: 88px;" type="radio" id="ibu tidak bekerja" name="pekerjaan ibu"><label for="ibu tidak bekerja">Tidak Bekerja</label>
+                </td>
+        </tr>
+        <tr>
+            <th><label for="penghasilanibu">Penghasilan Ibu</label></th>
+            <td><input style="margin-top: 25px;" list="penghasilani" id="penghasilanibu">
+                <datalist id="penghasilani">
+                  <option value="Penghasilan Ibu 1">Penghasilan Ibu 1</option>
+                  <option value="Penghasilan Ibu 2">Penghasilan Ibu 2</option>
+                  <option value="Penghasilan Ibu 3">Penghasilan Ibu 3</option>
+                  <option value="Penghasilan Ibu 4">Penghasilan Ibu 4</option>
+                  <option value="Penghasilan Ibu 5">Penghasilan Ibu 5</option>
+                </datalist><br><small>Pilih Rp0,-jika ibu sudah meninggal</small></td>
+        </tr>
+        <tr>
+            <th><label for="alamat ibu">Alamat Ibu</label><br><br><br><br><br></th>
+            <td><textarea style="margin-top: 15px;" id="alamat ibu"cols="30" rows="5"></textarea><br>
+                <small>Sesuai KTP</small>
+        </tr>
+        <tr>
+            <th><label for="namawali">Nama Wali<span style="color: red;">*</span></label></th>
+            <td><input style="margin-top: 15px;" type="text" id="namawali"><br>
+            <small>Sesuai KTP</small></td>
+        </tr>
+        <tr>
+            <th><label for="tahun lahir wali">Tahun Lahir Wali</label></th>
+            <td><input list="lahir wali" name="tahun lahir wali" id="tahun lahir wali">
+            <datalist id="lahir wali">
+              <option value="Tahun 1">Tahun 1</option>
+              <option value="Tahun 2">Tahun 2</option>
+              <option value="Tahun 3">Tahun 3</option>
+              <option value="Tahun 4">Tahun 4</option>
+              <option value="Tahun 5">Tahun 5</option>
+            </datalist></td>
+        </tr>
+        <tr>
+            <th><label for="pendidikan wali">Pendidikan Wali</label></th>
+            <td><input list="p wali" id="pendidikan wali">
+                <datalist id="p wali">
+                  <option value="Pendidikan 1">Pendidikan 1</option>
+                  <option value="Pendidikan 2">Pendidikan 2</option>
+                  <option value="Pendidikan 3">Pendidikan 3</option>
+                  <option value="Pendidikan 4">Pendidikan 4</option>
+                  <option value="Pendidikan 5">Pendidikan 5</option>
+                </datalist></td>
+        </tr>
+        <tr>
+            <th><label>Keadaan Wali<span style="color: red;">*</span></label></th>
+            <td><input type="radio" id="wali masih hidup" name="keadaan wali"><label for="wali masih hidup">Masih Hidup</label>
+            <input style="margin-left: 40px;" type="radio" id="wali sudah meninggal" name="keadaan wali"><label for="wali sudah meninggal">Sudah Meninggal</label><br>
+        </tr>
+        <tr>
+            <th><label for="pekerjaan wali">Pekerjaan Wali</label></th>
+            <td><input type="radio" id="wali pns" name="pekerjaan wali"><label for="wali pns">PNS</label>
+                <input style="margin-left: 94px;" type="radio" id="wali petani" name="pekerjaan wali"><label for="wali petani">Petani</label><br>
+                <input type="radio" id="wali honorer" name="pekerjaan wali"><label for="wali honorer">Honorer</label>
+                <input style="margin-left: 71px;" type="radio" id="wali karyawan swasta" name="pekerjaan wali"><label for="wali karyawan swasta">Karyawan Swasta</label><br>
+                <input type="radio" id="wali buruh" name="pekerjaan wali"><label for="wali buruh">Buruh</label>
+                <input style="margin-left: 85px;" type="radio" id="walwali wiraswasta" name="pekerjaan wali"><label for="walwali wiraswasta">Wiraswasta</label><br>
+                <input type="radio" id="wali tidak bekerja" name="pekerjaan wali"><label for="wali tidak bekerja">Wali Tidak Bekerja</label>
+                <input style="margin-left: 33px;" type="radio" id="wali dll" name="pekerjaan wali"><label for="wali dll">DLL</label>
+                </td>
+        </tr>
+        <tr>
+            <th><label for="penghasilanwali">Penghasilan Wali</label></th>
+            <td><input style="margin-top: 15px;" list="penghasilanw" id="penghasilanwali">
+                <datalist id="penghasilanw">
+                  <option value="Penghasilan Wali 1">Penghasilan Wali 1</option>
+                  <option value="Penghasilan Wali 2">Penghasilan Wali 2</option>
+                  <option value="Penghasilan Wali 3">Penghasilan Wali 3</option>
+                  <option value="Penghasilan Wali 4">Penghasilan Wali 4</option>
+                  <option value="Penghasilan Wali 5">Penghasilan Wali   5</option>
+                </datalist><br><small>Pilih Rp0,-jika wali sudah meninggal</small></td>
+        </tr>
+        <tr>
+            <th><label for="alamat wali">Alamat Wali</label><br><br><br><br><br></th>
+            <td><textarea id="alamat wali" cols="30" rows="5"></textarea><br>
+                <small>Sesuai KTP</small>
+        </tr>
+        <!--B. DATA ORANG TUA/WALI finish-->
+        <!--C. DATA PERIODIK start-->
+        <tr>
+            <th colspan="2"><br>C. DATA PERIODIK<br><br></th>
+        </tr>
+        <tr>
+            <th><label for="berat badan">Berat Badan (cm)</label></th>
+            <td><input style="margin-top: 20px;" type="text" id="berat badan" placeholder="Contoh : 35"><br>
+            <small>Cukup tulis angka tanpa satuan</small></td>
+        </tr>
+        <tr>
+            <th><label for="tinggi badan">Tinggi Badan (kg)</label></th>
+            <td><input style="margin-top: 20px;" type="text" id="tinggi badan" placeholder="Contoh : 160"><br>
+            <small>Cukup tulis angka tanpa satuan</small></td>
+        </tr>
+        <tr>
+            <th><label for="jarak tempat tinggal ke sekolah">Jarak Tempat Tinggal Ke Sekolah (KM)</label></th>
+            <td><input style="margin-top: 20px;" type="text" id="jarak tempat tinggal ke sekolah" placeholder="Contoh : 0.5"><br>
+            <small>Cukup tulis angka tanpa satuan jika desimal gunakan tanda titik (.)</small></td>
+        </tr>
+        <tr>
+            <th><label for="waktu tempuh ke sekolah">Waktu tempuh ke sekolah (menit)</label></th>
+            <td><input style="margin-top: 30px;" type="text" id="waktu tempuh ke sekolah" placeholder="Contoh : 1 jam ditulis 60"><br>
+            <small>Cukup tulis angka tanpa satuan jika desimal gunakan tanda titik (.)</small></td>
+        </tr>
+        <tr>
+            <th><label for="anak ke">Anak ke...</label></th>
+            <td><input type="text" id="anak ke"></td>
+        </tr>
+        <tr>
+            <th><label for="saudara kandung">Jumlah Kaudara Kandung (orang)</label></th>
+            <td><input type="text" id="saudara kandung"></td>
+        </tr>
+        <!--C. DATA PERIODIK finish-->
+        <!--D. DATA AKADEMIK start-->
+        <tr>
+            <th colspan="2"><br>D. DATA AKADEMIK<br><br></th>
+        </tr>
+        <tr>
+            <th><label for="asal sekolah">Nama Asal Sekolah SMP/MTs<span style="color: red;"></span></label></th>
+            <td><input type="text" id="asal sekolah"></td>
+        </tr>
+        <tr>
+        <th><label for="alamat asal sekolah">Alamat Sekolah Asal</label><br><br><br><br><br></th>
+        <td><textarea name="asal sekola" id="alamat asal sekolah" cols="30" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <th><label for="no peserta ujian">No. Peserta Ujian SMP/MTS</label></th>
+            <td><input style="margin-top: 20px;" type="text" id="no peserta ujian" placeholder="Contoh :2-13-03-35-008-156-5"><br>
+            <small>tulis nomor ujian dengan sparator "-"</small></td>
+        </tr>
+        <tr>
+            <th><label for="no seri ijazah">No. Seri Ijazah SMP/MTS</label></th>
+            <td><input style="margin-top: 20px;" type="text" id="no seri ijazah" placeholder="Contoh : DN-03 DI 0365409"><br>
+            <small>kosongkan jika ijazah belum terbit</small></td>
+        </tr>
+        <tr>
+            <th><label for="skhun">No. Seri Ijazah SMP/MTS</label></th>
+            <td><input style="margin-top: 20px;" type="text" id="skhun" placeholder="Contoh : DN-03 DI 0365409"><br>
+            <small>kosongkan jika SKHUN belum terbit</small></td>
+        </tr>
+        <tr>
+            <th><label for="kelulusan">Tahun Kelulusan SMP/MTS</label></th>
+            <td><input type="text" id="kelulusan" ><br></td>
+        </tr>
+        <!--D. DATA AKADEMIK finish-->
+        <!--E. KELENGKAPAN PERSYARATAN start-->
+        <tr>
+            <th colspan="2"><br>E. KELENGKAPAN PERSYARATAN<br><br></th>
+        </tr>
+        <tr>
+            <th><label for="persyaratan">Berkas persyaratan yang dilampirkan</label><br><br><br><br><br><br><br><br></th>
+            <td><input type="checkbox" id="shun" name="persyaratan">
+    <label for="shun">asli SHUN / SKHUN sementara (*jika sudah terbit)</label>
+    <br>
+    <input type="checkbox" id="ft ijazah" name="persyaratan">
+    <label for="ft ijazah"> Fotocopy Ijazah/STTB dilegalisir (*jika sudah Terbit)</label>
+    <br>
+    <input type="checkbox" id="ft raport" name="persyaratan">
+    <label for="ft raport">Foto copy Raport Semester 1 s/d 5</label>
+    <br>
+    <input type="checkbox" id="st kelulusan" name="persyaratan">
+    <label for="st kelulusan">Surat Kelulusan Asli</label>
+    <br>
+    <input type="checkbox" id="pas photo" name="persyaratan">
+    <label for="pas photo">Pas Photo 3 x 4 berwarna</label>
+    <br>
+    <input type="checkbox" name="persyaratan" id="ft KK">
+    <label for="ft KK">Fotocopy KK</label>
+    </td>
+        </tr>
+        <!--E. KELENGKAPAN PERSYARATAN finish-->
+        <!--F. PILIHAN JURUSAN / PEMINATAN start start-->
+        <tr>
+            <th colspan="2"><br>F. PILIHAN JURUSAN / PEMINATAN<br><br></th>
+        </tr>
+        <tr>
+            <th><label for="rekomendasi">Rekomendasi Guru BP/BK Asal (SMP/MTs)</label></th>
+            <td><input list="jurusan" id="rekomendasi">
+                <datalist id="jurusan">
+                    <option value="rekomendasi 1">rekomendasi 1</option>
+                    <option value="rekomendasi 2">rekomendasi 2</option>
+                    <option value="rekomendasi 3">rekomendasi 3</option>
+                    <option value="rekomendasi 4">rekomendasi 4</option>
+                    <option value="rekomendasi 5">rekomendasi 5</option>
+                  </datalist></td>
+        </tr>
+        <tr>
+            <th><label for="pilihan sendiri">Pilihan Sendiri</label></th>
+            <td><input list="jurusan pilihan sendiri" id="pilihan sendiri">
+                <datalist id="jurusan pilihan sendiri">
+                    <option value="Pilihan 1">Pilihan 1</option>
+                    <option value="Pilihan 2">Pilihan 2</option>
+                    <option value="Pilihan 3">Pilihan 3</option>
+                    <option value="Pilihan 4">Pilihan 4</option>
+                    <option value="Pilihan 5">Pilihan 5</option>
+                  </datalist></td>
+        </tr>
+        <!--F. PILIHAN JURUSAN / PEMINATAN start finish-->
+        <!--G. KESANGGUPAN PEMOHONAN start-->
+        <tr>
+            <td colspan="2"><p><b>G. KESANGGUPAN PEMOHONAN</b> saya sanggup memenuhi segala ketentuan
+                tata/tertib yang di terapkan oleh <b>pihak SMA Negeri 1 Payung</b>
+                sebagai berikut : <b>1.</b>berakhlak sesuai dengan peraturan sekolah
+                dan visi/misi SMA Negeri Payung<b>2.</b>berseragam/berpakaian sesuai dengan 
+                ketentuan sekolah<b>3.</b>menaati dan menghormati pimpinan SMA Negeri 1 Payung
+                dan tenaga pendidik serta kependidikan juga menjaga alamamater.<b>4.</b>menyerahkan
+                semua berkas persyaratan sesuai ketentuan yang telah di tetapkan.<b>catatan : bila
+                mealnggar ketentuan/aturan tersebut, maka saya bersedia menerima segala teguran atau nasiha
+                bahkan sanggup untuk dikeluarkan dari SMA Negeri 1 Payung.</b>periksa kembali isian formulir
+                Anda sebelum divalidasi, jika sudah yakin semua isian benar klik <b>kirim
+                formulir.</b>terimakasih atas kepercayaan anda terhadap<b>SMA Negeri 1 Payung</b>sebagai
+                pilihan untuk meraih masa depan.   
+            </P></td>
+            </tr>
+        <!--G. KESANGGUPAN PEMOHONAN finish-->
+            <tr>
+                <td colspan="2"><div style="background-color: white; margin-right: 170px; height: 100%;">
+                  <input type="checkbox" id="setuju?">
+                  <label for="setuju?">Saya setuju dengan <span style="color: #0AC0EE;">peraturan ini.</span><br><span style="color: red; margin-left: 8px;">*</span></label><br><input type="submit" value="Submit">
+                </div></td>
+            </tr>
+    </table>
+  </form>
+   </center>
+</body>
+</html>

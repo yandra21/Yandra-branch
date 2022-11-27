@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
+    <script>
+      function myFunction() {
+        var x = document.getElementById("password-login");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="https://smkalfalah.sch.id/">
+      <div class="container-login">
+        <img src="assets/download.png" alt="Al Falah">
+        <h1>Login</h1>
+        <div class="login-nama-lengkap"><label for="nama lengkap login" >Nama<span style="color: red;">*</span></label><br>
+          <input class="nama-lengkap" type="text" id="nama lengkap login" placeholder="Nama Anda" required></div>
+        <div class="login-password"><label for="password-login">Password<span style="color: red;">*</span></label><br>
+          <input class="password-login" type="password" id="password-login" placeholder="Password" required><br>
+          <input type="checkbox" onclick="myFunction()" id="sandil"><label for="sandil">Show Password</label>
+        </div>
+      <div class="daftar">
+        <p>Belum menjadi member? <a href="daftar.html">Daftar</a></p>
+      </div>
+      <div>
+      <input class="checkbox-login" type="checkbox" id="checkbox"><label class="ingat-saya" for="checkbox">
+        Ingat Saya
+      </label></div>
+      <div>
+        <input class="button-login"  type="submit" id="btn-login" value="Masuk">
+        <label for="btn-login"></label>
+      </div>
+      </div>
+    </form>
+  </body>
+</html>

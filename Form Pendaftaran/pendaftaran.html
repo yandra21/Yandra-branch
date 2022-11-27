@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <style>
+      th{
+        text-align: left;
+      }
+    </style>
+</head>
+<body style="background-color: greenyellow;">
+  <center>
+    <img class="ftalfalah" src="alfalah.png" alt="alfalah">
+    <table border="1" style="width: 450px;">
+        <tr>
+            <th><label for="np">Nomor Pendaftaran</label><br><br></th>
+            <td><input class="np" type="text" id="np" placeholder="KOSONGKAN"><br><small>Diisi panitia saat validasi data</small></td>
+        </tr>
+        <tr>
+            <th colspan="2"><br>A. IDENTITAS CALON PESERTA DIDIK<br><br></th>
+        </tr>
+         <tr>
+            <th><label for="nm">Nama Lengkap</label><span style="color: red;">*</span><br><br></th>
+            <td><input size="30px" type="text" id="nm"><br><small style="font-size: 10px;">Tulis nama lengkap sesuai ijazah SMP/MTS</small></td>
+        </tr>
+        <tr>
+            <th><br><label>Jenis Kelamin <span style="color: red;">*</span></label><br><br></th>
+            <td><input type="radio" id="l" name="gender"><label for="l">Laki-Laki</label>
+                <input type="radio" id="p" name="gender" style="margin-left: 50px;"><label for="p">Perempuan</label></td>
+        </tr>
+        <tr>
+            <th><label for="NISN">NISN</label><br><br></th>
+            <td><input type="text" id="NISN" placeholder="contoh : 9996910688"><br><small style="font-size: 10px;">isi 10 digit angka NISN</small></td>
+        </tr>
+        <tr>
+            <th><label for="NIK">NIK</label><br><br></th>
+            <td><input type="text" id="NIK" placeholder="contoh : 959054678343967"><br><small style="font-size: 10px;">isi 16 digit angka NIK </small></td>
+        </tr>
+        <tr>
+            <th><label for="tempat lahir">Tempat Lahir<span style="color: red;">*</span></label></th>
+            <td><input type="text" id="tempat lahir"></td>
+        </tr>
+        <tr>
+            <th><label for="tanggal lahir">Tanggal Lahir<span style="color: red;">*</span></label></th>
+            <td><input type="date" id="tanggal lahir"><br><small>bulan tanggal tahun</small></td>
+        </tr>
+        <tr>
+            <th><label>Agama<span style="color: red;">*</span></label></th>
+            <td><input type="radio" id="Islam" name="agama"><label for="Islam">Islam</label>
+                <input type="radio" id="Buddha" name="agama"style="margin-left: 71px;"><label for="Buddha">Buddha</label><br>
+                <input type="radio" id="Kristen" name="agama"><label for="Kristen">Kristen</label>
+                <input type="radio" id="Katolik" name="agama" style="margin-left: 60px;"><label for="Katolik">Katolik</label><br>
+                <input type="radio" id="Hindu" name="agama"><label for="Hindu">Hindu</label>
+                <input type="text" id="Other"placeholder="Other" style="margin-left: 85px; width: 70px;">
+            </td>
+        </tr>
+        <tr>
+          <th><label for="alamat">Alamat Rumah<span style="color: red;">*</span></label></th>
+          <td><textarea id="alamat"></textarea><br><small style="font-size: 10px;">tulis alamat lengkap</small>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="notelp">No.Telp./HP/WA</label></th>
+          <td><input type="tel" id="notelp"placeholder="contoh : 0838 1234 XXXX" pattern="{0-9}{0-9}{0-9}"><br><small style="font-size: 10px;">No yang bisa dihubungi</small></smal>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="filefoto">Pas Photo Terbaru</label></th>
+          <td><input type="file" id="filefoto" name="filefoto" value="Cari File Photo di HP/Komputer"><br><small style="font-size: 11px;">Background Merah atau Biru sesuai Tahun Lahir</small>
+          </td>
+        </tr>
+        <tr>
+          <th><label>Apakah anda penerima kartu KPS/KIP/PIP?<span style="color: red;">*</span></label></th>
+          <td><input type="radio" id="kipya" name="kip"><label for="kipya">ya</label><input type="radio" id="kiptidak" name="kip" style="margin-left: 100px;"><label for="kiptidak">tidak</label>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="nokip">Nomor KPS/KIP/PIP</label></th>
+          <td><input size="30px" type="text" id="nokip"><br><small style="font-size: 10px;">Tulis nomor salah satu nomor KPS/KIP/PIP yang dimiliki</small></td>
+        </tr>
+        <tr>
+          <th><label>Apakah anda layak mendapatkan BSM?<span style="color: red;">*</span></label></th>
+          <td><input type="radio" id="bsmya" name="bsm"><label for="bsmya">ya</label>
+          <input type="radio" id="bsmtidak" name="bsm" style="margin-left: 100px;"><label for="bsmtidak">tidak</label></td>
+        </tr>
+        <tr>
+          <th><label for="Alasan">Alasan layak mendapatkan BSM</label></th>
+          <td><input list="alasanbsm" name="alasanbsm" id="Alasan"><datalist id="alasanbsm">
+            <option value="Alsan 1">Alasan 1</option>
+            <option value="Alsan 2">Alasan 2</option>
+            <option value="Alasan 3">Alasan 3</option>
+            <option value="Alasan 4">Alasan 4</option>
+            <option value="Alasan 5">Alasan 5</option>
+          </datalist></td>
+        </tr>
+        <tr>
+          <th><label for="rencanatinggal">Rencana Tinggal</label></th>
+          <td><input list="rencanat" name="rencana" id="rencanatinggal"><datalist id="rencanat">
+            <option value=<"Rencana 1">Rencana 1</option>
+            <option value="Rencana 2">Rencana 2</option>
+            <option value="Rencana 3">Rencana 3</option>
+            <option value="Alasan 4">Alasan 4</option>
+            <option value="Rencana 5">Rencana 5</option>
+          </datalist></td>
+        </tr>
+        <tr>
+          <th><label for="rencanatranportasi">Rencana Alat Tranportasi</label></th>
+          <td><input list="rencanatr" name="alasanbsm" id="rencanatranportasi"><datalist id="rencanatr">
+            <option value=<"Rencana 1">Rencana 1</option>
+            <option value="Rencana 2">Rencana 2</option>
+            <option value="Rencana 3">Rencana 3</option>
+            <option value="Alasan 4">Alasan 4</option>
+            <option value="Rencana 5">Rencana 5</option>
+          </datalist></td>
+        </tr>
+    </table>
+   </center>
+</body>
+</html>
